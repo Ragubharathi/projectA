@@ -5,3 +5,11 @@ variable "projectA_cidr" {
 variable "projectA_region" {
   default = "ap-south-1"
 }
+
+variable "AZ1" {
+  default = "ap-south-1a"
+}
+
+variable "AZ2" {
+  default = "ap-south-1b"
+}
