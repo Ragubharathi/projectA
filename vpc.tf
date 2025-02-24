@@ -72,6 +72,9 @@ resource "aws_route_table" "pravite_rt" {
     cidr_block = "0.0.0.0/0"
     nat_gateway_id = aws_nat_gateway.nat.id
   }
+  tags = {
+    Name = "Private_rt"
+  }
 }
 
 resource "aws_subnet" "private_sub_1" {
